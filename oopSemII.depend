@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1464555817 source:c:\users\bruce\codeblocks_projects\oopsemii\figura.cpp
+	<iostream>
+	"figura.h"
+
+1464599365 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
+
+1464540836 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
+	<iostream>
+	"figura.h"
+	"punct.h"
+	"segmOr.h"
+	"segmVe.h"
+	"dreptunghi.h"
+
+1464595582 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
+	<iostream>
+	"figura.h"
+	"punct.h"
+
+1464598456 c:\users\bruce\codeblocks_projects\oopsemii\punct.h
+
+1464598541 c:\users\bruce\codeblocks_projects\oopsemii\segmor.h
+
+1464536835 source:c:\users\bruce\codeblocks_projects\oopsemii\segmor.cpp
+	"figura.h"
+	"punct.h"
+	"segmOr.h"
+
+1464598541 c:\users\bruce\codeblocks_projects\oopsemii\segmve.h
+
+1464598296 source:c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.cpp
+	"figura.h"
+	"punct.h"
+	"segmOr.h"
+	"segmVe.h"
+	"dreptunghi.h"
+
+1464598198 c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.h
+
+1464536835 source:c:\users\bruce\codeblocks_projects\oopsemii\segmve.cpp
+	"figura.h"
+	"punct.h"
+	"segmVe.h"
+

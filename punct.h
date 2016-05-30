@@ -9,8 +9,8 @@ class punct : public figura
         double  coordX, coordY;
 
     protected:
-        double  getLength() { return 0.0; }
-        double  getArea()   { }
+        double  getLength();
+        double  getArea();
 
     public:
         punct();

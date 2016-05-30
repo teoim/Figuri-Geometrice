@@ -8,7 +8,7 @@ class segmVe : public figura
         punct *p1, *p2;
 
     protected:
-        double  getArea()   { }
+        double  getArea();
 
     public:
         segmVe();

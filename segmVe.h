@@ -6,9 +6,8 @@ class segmVe : public figura
 {
     private:
         punct *p1, *p2;
-
-    protected:
-        double  getArea();
+        punct* getP1();
+        punct* getP2();
 
     public:
         segmVe();
@@ -17,6 +16,9 @@ class segmVe : public figura
 
         double  getLength();
         int     getID(){return ID;}
+        int     operator==(segmVe *);
+        int     operator<(segmVe *);
+        int     operator>(segmVe *);
 };
 
 #endif // SEGMVE_H

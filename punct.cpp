@@ -25,12 +25,26 @@ void punct::setY(double vY)
     coordY = vY;
 }
 
-int punct::operator==(punct * p1)
+void punct::operator+(double v[2])
 {
-    return (getX() == p1->getX()) && (getY() == p1->getY());
+    setX( getX() + v[0] );
+    setY( getY() + v[1] );
 }
 
-int punct::operator<(punct * p1)
+int punct::operator==(punct & p1)
 {
-    return (getX() < p1->getX()) && (getY() < p1->getY());
+    cout << "operator== din punct" << endl;
+    return (getX() == p1.getX()) && (getY() == p1.getY());
+}
+
+int punct::operator<(punct & p1)
+{
+    cout << "operator< din punct" << endl;
+    return (getX() < p1.getX()) && (getY() < p1.getY());
+}
+
+int punct::operator>(punct & p1)
+{
+    cout << "operator> din punct" << endl;
+    return (getX() > p1.getX()) && (getY() > p1.getY());
 }

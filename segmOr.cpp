@@ -27,3 +27,28 @@ double segmOr::getLength()
     double L = p2->getX() - p1->getX();
     return L < 0 ? -L : L ;     //Ne asiguram ca lungimea este intotdeauna pozitiva
 }
+
+punct* segmOr::getP1()
+{
+    return p1;
+}
+
+punct* segmOr::getP2()
+{
+    return p2;
+}
+
+int segmOr::operator==(segmOr * s1)
+{
+    return ((getP1() == s1->getP1()) && (getP2() == s1->getP2()));
+}
+
+int segmOr::operator<(segmOr * s1)
+{
+    return (getLength() < s1->getLength());
+}
+
+int segmOr::operator>(segmOr * s1)
+{
+    return (getLength() > s1->getLength());
+}

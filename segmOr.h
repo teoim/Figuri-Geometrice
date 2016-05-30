@@ -6,9 +6,8 @@ class segmOr : public figura
 {
     private:
         punct *p1, *p2;
-
-    protected:
-        double  getArea();
+        punct *getP1();
+        punct *getP2();
 
     public:
         segmOr();
@@ -17,6 +16,9 @@ class segmOr : public figura
 
         double  getLength();
         int     getID(){return ID;}
+        int     operator==(segmOr *);
+        int     operator<(segmOr *);
+        int     operator>(segmOr *);
 };
 
 #endif // SEGMOR_H

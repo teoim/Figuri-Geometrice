@@ -8,10 +8,6 @@ class punct : public figura
     private:
         double  coordX, coordY;
 
-    protected:
-        double  getLength();
-        double  getArea();
-
     public:
         punct();
         punct(double, double);
@@ -24,8 +20,10 @@ class punct : public figura
         int     getID()     { return ID; }
 
 
-        int     operator==(punct*);
-        int     operator<(punct*);
+        void    operator+(double[2]);
+        int     operator==(punct &);
+        int     operator<(punct &);
+        int     operator>(punct &);
 
 };
 

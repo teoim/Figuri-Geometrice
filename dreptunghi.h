@@ -5,14 +5,14 @@ using namespace std;
 class dreptunghi : public figura
 {
     private:
-        figura * p;
-        figura * so;
-        figura * sv;
+        punct * p;
+        segmOr * so;
+        segmVe * sv;
         double   area;
         void     setArea();
 
-    protected:
-        double   getLength();
+//    protected:
+//        double   getLength();
 
     public:
         dreptunghi();
@@ -21,6 +21,14 @@ class dreptunghi : public figura
 
         double  getArea()   { return area; }
         int     getID()     { return ID; }
+        punct*  getP();
+        segmOr*  getSo();
+        segmVe*  getSv();
+        double getLength();
+        double getWidth();
+        int operator==(dreptunghi &);
+        int operator<(dreptunghi &);
+        int operator>(dreptunghi &);
 };
 
 #endif // DREPTUNGHI_H

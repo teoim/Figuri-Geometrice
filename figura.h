@@ -12,9 +12,14 @@ class figura
 
     public:
                         figura();
-        virtual double  getLength() =0;
-        virtual double  getArea()   =0;
-        virtual int     getID()     =0;
+        virtual        ~figura(){}
+        virtual int     getID()=0;
+        virtual double  getArea(){return 0.0;};
+
+        virtual void    operator+(double[2]){}
+        virtual int     operator==(figura &){return 0;}
+        virtual int     operator<(figura &){return 0;}
+        virtual int     operator>(figura &){return 0;}
 };
 
 #endif // FIGURA_H

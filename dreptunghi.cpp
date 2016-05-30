@@ -1,3 +1,4 @@
+#include <iostream>
 #include "figura.h"
 #include "punct.h"
 #include "segmOr.h"
@@ -32,5 +33,49 @@ dreptunghi::~dreptunghi()
 
 void dreptunghi::setArea()
 {
-    area = sv->getLength() * so->getLength();
+//    area = sv->getLength() * so->getLength();
+    area = getLength() * getWidth();
+}
+
+punct* dreptunghi::getP()
+{
+    return p;
+}
+
+segmOr* dreptunghi::getSo()
+{
+    return so;
+}
+
+segmVe* dreptunghi::getSv()
+{
+    return sv;
+}
+
+double dreptunghi::getLength()
+{
+    return getSv()->getLength();
+}
+
+double dreptunghi::getWidth()
+{
+    return getSo()->getLength();
+}
+
+int dreptunghi::operator==(dreptunghi & d1)
+{
+    return ((getP() == d1.getP()) && (getSo() == d1.getSo()) && (getSv() == d1.getSv()));
+}
+
+int dreptunghi::operator<(dreptunghi & d1)
+{
+
+    cout << "\n operator < din dreptunghi:\n" << endl;
+    return ( (getArea() < d1.getArea()) ? 1 : 0 );
+}
+
+int dreptunghi::operator>(dreptunghi & d1)
+{
+    cout << "\n operator > din dreptunghi:\n" << endl;
+    return ( (getArea() > d1.getArea()) ? 1 : 0 );
 }

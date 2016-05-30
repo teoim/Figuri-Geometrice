@@ -3,9 +3,9 @@
 	<iostream>
 	"figura.h"
 
-1464599365 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
+1464632433 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
 
-1464540836 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
+1464634468 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
 	<iostream>
 	"figura.h"
 	"punct.h"
@@ -13,32 +13,33 @@
 	"segmVe.h"
 	"dreptunghi.h"
 
-1464595582 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
+1464634298 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
 	<iostream>
 	"figura.h"
 	"punct.h"
 
-1464603700 c:\users\bruce\codeblocks_projects\oopsemii\punct.h
+1464632390 c:\users\bruce\codeblocks_projects\oopsemii\punct.h
 
-1464603666 c:\users\bruce\codeblocks_projects\oopsemii\segmor.h
+1464618118 c:\users\bruce\codeblocks_projects\oopsemii\segmor.h
 
-1464603422 source:c:\users\bruce\codeblocks_projects\oopsemii\segmor.cpp
+1464611077 source:c:\users\bruce\codeblocks_projects\oopsemii\segmor.cpp
 	"figura.h"
 	"punct.h"
 	"segmOr.h"
 
-1464603700 c:\users\bruce\codeblocks_projects\oopsemii\segmve.h
+1464618118 c:\users\bruce\codeblocks_projects\oopsemii\segmve.h
 
-1464598296 source:c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.cpp
+1464631152 source:c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.cpp
+	<iostream>
 	"figura.h"
 	"punct.h"
 	"segmOr.h"
 	"segmVe.h"
 	"dreptunghi.h"
 
-1464598198 c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.h
+1464631107 c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.h
 
-1464536835 source:c:\users\bruce\codeblocks_projects\oopsemii\segmve.cpp
+1464618151 source:c:\users\bruce\codeblocks_projects\oopsemii\segmve.cpp
 	"figura.h"
 	"punct.h"
 	"segmVe.h"

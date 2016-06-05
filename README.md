@@ -18,3 +18,10 @@ A hierarchy of classes representing geometric shapes (dot, segment and rectangle
 
 
 Every shape is identified by a unique unsigned integer ID.
+
+
+//TODO:  
+//Operators +, *, overloading  
+//Graphics  
+//Upgrade to 3D  
+//....

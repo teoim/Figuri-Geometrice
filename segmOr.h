@@ -16,9 +16,9 @@ class segmOr : public figura
 
         double  getLength();
         int     getID(){return ID;}
-        int     operator==(segmOr *);
-        int     operator<(segmOr *);
-        int     operator>(segmOr *);
+        int     operator==(segmOr &);
+        int     operator<(segmOr &);
+        int     operator>(segmOr &);
 };
 
 #endif // SEGMOR_H

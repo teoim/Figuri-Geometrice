@@ -38,17 +38,17 @@ punct* segmOr::getP2()
     return p2;
 }
 
-int segmOr::operator==(segmOr * s1)
+int segmOr::operator==(segmOr & s1)
 {
-    return ((getP1() == s1->getP1()) && (getP2() == s1->getP2()));
+    return ((getP1() == s1.getP1()) && (getP2() == s1.getP2()));
 }
 
-int segmOr::operator<(segmOr * s1)
+int segmOr::operator<(segmOr & s1)
 {
-    return (getLength() < s1->getLength());
+    return (getLength() < s1.getLength());
 }
 
-int segmOr::operator>(segmOr * s1)
+int segmOr::operator>(segmOr & s1)
 {
-    return (getLength() > s1->getLength());
+    return (getLength() > s1.getLength());
 }

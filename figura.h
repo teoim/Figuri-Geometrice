@@ -16,7 +16,7 @@ class figura
         virtual int     getID()=0;
         virtual double  getArea(){return 0.0;};
 
-        virtual void    operator+(double[2]){}
+ //       virtual figura  operator+(double[]);
         virtual int     operator==(figura &){return 0;}
         virtual int     operator<(figura &){return 0;}
         virtual int     operator>(figura &){return 0;}

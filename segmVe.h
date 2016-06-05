@@ -16,9 +16,9 @@ class segmVe : public figura
 
         double  getLength();
         int     getID(){return ID;}
-        int     operator==(segmVe *);
-        int     operator<(segmVe *);
-        int     operator>(segmVe *);
+        int     operator==(segmVe &);
+        int     operator<(segmVe &);
+        int     operator>(segmVe &);
 };
 
 #endif // SEGMVE_H

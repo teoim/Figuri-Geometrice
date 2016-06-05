@@ -20,7 +20,7 @@ class punct : public figura
         int     getID()     { return ID; }
 
 
-        void    operator+(double[2]);
+      //  punct    operator+(double[]);
         int     operator==(punct &);
         int     operator<(punct &);
         int     operator>(punct &);

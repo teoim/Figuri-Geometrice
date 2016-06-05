@@ -25,11 +25,13 @@ void punct::setY(double vY)
     coordY = vY;
 }
 
-void punct::operator+(double v[2])
+/**punct punct::operator+(double v[2])
 {
-    setX( getX() + v[0] );
-    setY( getY() + v[1] );
-}
+    punct temp;
+    temp.setX( getX() + v[0] );
+    temp.setY( getY() + v[1] );
+    return temp;
+}*/
 
 int punct::operator==(punct & p1)
 {

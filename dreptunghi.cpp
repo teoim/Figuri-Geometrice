@@ -33,7 +33,6 @@ dreptunghi::~dreptunghi()
 
 void dreptunghi::setArea()
 {
-//    area = sv->getLength() * so->getLength();
     area = getLength() * getWidth();
 }
 
@@ -70,12 +69,12 @@ int dreptunghi::operator==(dreptunghi & d1)
 int dreptunghi::operator<(dreptunghi & d1)
 {
 
-    cout << "\n operator < din dreptunghi:\n" << endl;
+ //   cout << "\n operator < , dreptunghi:\n" << endl;
     return ( (getArea() < d1.getArea()) ? 1 : 0 );
 }
 
 int dreptunghi::operator>(dreptunghi & d1)
 {
-    cout << "\n operator > din dreptunghi:\n" << endl;
+ //   cout << "\n operator > , dreptunghi:\n" << endl;
     return ( (getArea() > d1.getArea()) ? 1 : 0 );
 }

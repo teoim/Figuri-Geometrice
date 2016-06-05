@@ -13,8 +13,8 @@ int main()
     punct * p = new punct();
     punct * q = new punct();
     punct * r = new punct(10,10);
-    segmOr segOr1;
-    segmVe segVe1;
+//    double v[] = {4.91, 5.65};
+//    r = r + v;
 
 //Setari + test coordonate initiale:
     cout << "\n" << "Coordonate init 'p' : " << "(" << p->getX() << "," << p->getY() << ")" << endl;
@@ -31,14 +31,14 @@ int main()
 
 //Test operator "==" pe puncte:
     cout << "\n" << "p si q: " << ( (*p == *q) ? "Puncte identice" : "Puncte diferite") << endl;
-    cout << "\t * q->setX(p->getX())" << endl; q->setX(p->getX());
-    cout << "\t * q->setY(p->getY())" << endl; q->setY(p->getY());
+    cout << "\t ## q->setX(p->getX())" << endl; q->setX(p->getX());
+    cout << "\t ## q->setY(p->getY())" << endl; q->setY(p->getY());
     cout << "p si q: " << ( (*p == *q) ? "Puncte identice" : "Puncte diferite") << endl;
 
 //Test operator "<" si ">" pe puncte:
     cout << "\n" << "p > r: " << ((*p > *r) ? "True" : "False") << endl;
     cout << "r > p: " << ((*r > *p) ? "True" : "False") << endl;
-    cout << "\t * r->setX(55)" << endl; r->setX(55);
+    cout << "\t ## r->setX(55)" << endl; r->setX(55);
     cout << "r < p: " << ((*r < *p) ? "True" : "False") << endl;
 
     punct s(25234,23425);
@@ -49,13 +49,12 @@ int main()
 //Test Dreptunghi:
     dreptunghi * d1 = new dreptunghi();
     dreptunghi * d2 = new dreptunghi(55.5, 60.0, 35.0, 15.0);
-    figura * f1 = new dreptunghi(10.0, 10.0, 5.0, 6.0);
     figura * f2 = d2;
 
 
     cout << "\nAria D1: " << d1->getArea() << endl;
     cout << "Aria D2 (prin f2) : " << f2->getArea() << endl;
-//    cout << "Laturi D2 (prin f2): " << f2.getLength << " , " << f2.getWidth << endl;  Nu este permis - in clasa figura nu avem metodele getLength si getWidth
+//    cout << "Laturi D2 (prin f2): " << (dreptunghi)f2->getLength << " , " << (dreptunghi)f2->getWidth << endl;//  Nu este permis - in clasa figura nu avem metodele getLength si getWidth
     cout << "ID D1: " << d1->getID() << endl;
     cout << "ID D2: " << d2->getID() << endl;
     cout << "D1 < D2: " << ((*d1 < *d2) ? "True" : "False") << endl;
@@ -63,8 +62,12 @@ int main()
     cout << "D2 > D1: " << ((*d2 > *d1) ? "True" : "False") << endl;
     cout << "D2 == D1: " << ((*d2 == *d1) ? "True" : "False") << endl;
 
+
     delete d1;
     delete d2;
+    delete p;
+    delete q;
+    delete r;
 
     return 0;
 }

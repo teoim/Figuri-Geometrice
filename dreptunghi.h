@@ -11,9 +11,6 @@ class dreptunghi : public figura
         double   area;
         void     setArea();
 
-//    protected:
-//        double   getLength();
-
     public:
         dreptunghi();
         dreptunghi(double, double, double, double);

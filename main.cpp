@@ -17,12 +17,12 @@ int main()
 //    r = r + v;
 
 //Setari + test coordonate initiale:
-    cout << "\n" << "Coordonate init 'p' : " << "(" << p->getX() << "," << p->getY() << ")" << endl;
+    cout << "\n" << "Coordonate init 'p' : " << "(" << p->getX() << "," << p->getY() << ")" << "\t## Expected (0,0); " << endl;
     p->setX(55);
     p->setY(20);
-    cout << "Coordonate noi 'p' : (" << p->getX() << "," << p->getY() << ")" << endl;
-    cout << "Coordonate q = (" << q->getX() << "," << q->getY() << ")" << endl;
-    cout << "Coordonate r = (" << r->getX() << "," << r->getY() << ")" << endl;
+    cout << "Coordonate noi 'p' : (" << p->getX() << "," << p->getY() << ")" << "\t## Expected (55,20); " << endl;
+    cout << "Coordonate q = (" << q->getX() << "," << q->getY() << ")" << "\t## Expected (0,0); - " << endl;
+    cout << "Coordonate r = (" << r->getX() << "," << r->getY() << ")" << "\t## Expected (10,10); " << endl;
 
 //Test ID-uri:
     cout << "\n" << "p.ID = " << p->getID() << endl;

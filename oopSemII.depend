@@ -5,7 +5,7 @@
 
 1464648857 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
 
-1465071406 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
+1465115839 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
 	<iostream>
 	"figura.h"
 	"punct.h"
@@ -13,7 +13,7 @@
 	"segmVe.h"
 	"dreptunghi.h"
 
-1464649588 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
+1465115686 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
 	<iostream>
 	"figura.h"
 	"punct.h"

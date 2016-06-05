@@ -35,18 +35,18 @@ void punct::setY(double vY)
 
 int punct::operator==(punct & p1)
 {
-    cout << "operator== din punct" << endl;
+ //   cout << "operator== , punct" << endl;
     return (getX() == p1.getX()) && (getY() == p1.getY());
 }
 
 int punct::operator<(punct & p1)
 {
-    cout << "operator< din punct" << endl;
+  //  cout << "operator< , punct" << endl;
     return (getX() < p1.getX()) && (getY() < p1.getY());
 }
 
 int punct::operator>(punct & p1)
 {
-    cout << "operator> din punct" << endl;
+//    cout << "operator> , punct" << endl;
     return (getX() > p1.getX()) && (getY() > p1.getY());
 }

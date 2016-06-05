@@ -21,7 +21,7 @@ Every shape is identified by a unique unsigned integer ID.
 
 
 //TODO:  
-//Operators +, *, overloading  
+//Operators +, *, ... overloading  
 //Graphics  
 //Upgrade to 3D  
 //....

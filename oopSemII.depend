@@ -1,35 +1,11 @@
 # depslib dependency file v1.0
-1464555817 source:c:\users\bruce\codeblocks_projects\oopsemii\figura.cpp
+1465148258 source:c:\users\bruce\codeblocks_projects\oopsemii\figura.cpp
 	<iostream>
 	"figura.h"
 
-1464648857 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
+1465160089 c:\users\bruce\codeblocks_projects\oopsemii\figura.h
 
-1465115839 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
-	<iostream>
-	"figura.h"
-	"punct.h"
-	"segmOr.h"
-	"segmVe.h"
-	"dreptunghi.h"
-
-1465115686 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
-	<iostream>
-	"figura.h"
-	"punct.h"
-
-1464649588 c:\users\bruce\codeblocks_projects\oopsemii\punct.h
-
-1464643616 c:\users\bruce\codeblocks_projects\oopsemii\segmor.h
-
-1464643616 source:c:\users\bruce\codeblocks_projects\oopsemii\segmor.cpp
-	"figura.h"
-	"punct.h"
-	"segmOr.h"
-
-1464643698 c:\users\bruce\codeblocks_projects\oopsemii\segmve.h
-
-1465071504 source:c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.cpp
+1465161240 source:c:\users\bruce\codeblocks_projects\oopsemii\main.cpp
 	<iostream>
 	"figura.h"
 	"punct.h"
@@ -37,9 +13,35 @@
 	"segmVe.h"
 	"dreptunghi.h"
 
-1465071504 c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.h
+1465158734 source:c:\users\bruce\codeblocks_projects\oopsemii\punct.cpp
+	<iostream>
+	"figura.h"
+	"punct.h"
 
-1464643695 source:c:\users\bruce\codeblocks_projects\oopsemii\segmve.cpp
+1465157627 c:\users\bruce\codeblocks_projects\oopsemii\punct.h
+
+1465157702 c:\users\bruce\codeblocks_projects\oopsemii\segmor.h
+
+1465160559 source:c:\users\bruce\codeblocks_projects\oopsemii\segmor.cpp
+	<iostream>
+	"figura.h"
+	"punct.h"
+	"segmOr.h"
+
+1465158192 c:\users\bruce\codeblocks_projects\oopsemii\segmve.h
+
+1465160559 source:c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.cpp
+	<iostream>
+	"figura.h"
+	"punct.h"
+	"segmOr.h"
+	"segmVe.h"
+	"dreptunghi.h"
+
+1465160559 c:\users\bruce\codeblocks_projects\oopsemii\dreptunghi.h
+
+1465160559 source:c:\users\bruce\codeblocks_projects\oopsemii\segmve.cpp
+	<iostream>
 	"figura.h"
 	"punct.h"
 	"segmVe.h"

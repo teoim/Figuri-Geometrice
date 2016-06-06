@@ -12,10 +12,15 @@ class segmOr : public figura
     public:
         segmOr();
         segmOr(double, double, double);
+        segmOr(const segmOr& so);
         ~segmOr();
 
         double  getLength();
         int     getID(){return ID;}
+        segmOr  operator++();
+        segmOr  operator++(int);
+        segmOr  operator--();
+        segmOr  operator--(int);
         int     operator==(segmOr &);
         int     operator<(segmOr &);
         int     operator>(segmOr &);

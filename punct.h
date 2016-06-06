@@ -10,8 +10,9 @@ class punct : public figura
 
     public:
         punct();
+        punct(const punct& p);
         punct(double, double);
-        virtual ~punct()    {};
+        ~punct();
 
         void    setX(double);
         void    setY(double);
@@ -21,6 +22,10 @@ class punct : public figura
 
 
       //  punct    operator+(double[]);
+        punct   operator++();     //prefix
+        punct   operator++(int);  //sufix
+        punct   operator--();     //prefix
+        punct   operator--(int);  //sufix
         int     operator==(punct &);
         int     operator<(punct &);
         int     operator>(punct &);

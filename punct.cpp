@@ -9,10 +9,24 @@ punct::punct()
     setY(0.0);
 }
 
+punct::punct(const punct& p)
+{
+//    cout << "Constructor de copiere punct." << endl;
+
+//initializare membrii (prin copiere):
+    this->setX(p.coordX);
+    this->setY(p.coordY);
+}
+
 punct::punct(double vX, double vY)
 {
     setX(vX);
     setY(vY);
+}
+
+punct::~punct()
+{
+//    cout << "Destructor punct\n" << endl;
 }
 
 void punct::setX(double vX)
@@ -25,13 +39,34 @@ void punct::setY(double vY)
     coordY = vY;
 }
 
-/**punct punct::operator+(double v[2])
+//OPERATORII ++ SI -- VOR INCREMENTA CU O UNITATE VALOAREA FIECAREI COORDONATE:
+punct punct::operator++()  //PREFIX
 {
-    punct temp;
-    temp.setX( getX() + v[0] );
-    temp.setY( getY() + v[1] );
-    return temp;
-}*/
+    coordX++;
+    coordY++;
+    return *this;
+}
+
+punct punct::operator++(int a)  //SUFIX
+{
+    coordX++;
+    coordY++;
+    return *this;
+}
+
+punct punct::operator--()  //PREFIX
+{
+    coordX--;
+    coordY--;
+    return *this;
+}
+
+punct punct::operator--(int a)  //SUFIX
+{
+    coordX--;
+    coordY--;
+    return *this;
+}
 
 int punct::operator==(punct & p1)
 {

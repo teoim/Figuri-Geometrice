@@ -24,6 +24,15 @@ dreptunghi::dreptunghi(double x, double y, double lung, double lat)
     setArea();
 }
 
+dreptunghi::dreptunghi(const dreptunghi& dr)
+{
+//    cout << "Constructor de copiere dreptunghi" << endl;
+    p = dr.p;
+    so = dr.so;
+    sv = dr.sv;
+    setArea();
+}
+
 dreptunghi::~dreptunghi()
 {
     delete p;
@@ -61,6 +70,39 @@ double dreptunghi::getWidth()
     return getSo()->getLength();
 }
 
+//INCAZUL DREPTUNGHIULUI, OPERATORII ++ SI -- VOR INCREMENTA/DECREMENTA CU O UNITATE VALOAREA FIECAREI LATURI:
+dreptunghi dreptunghi::operator++() //PREFIX
+{
+    cout << "++d\n" << endl;
+    so++;
+    sv++;
+    return *this;
+}
+
+dreptunghi dreptunghi::operator++(int a) //SUFIX
+{
+    cout << "++d\n" << endl;
+    so++;
+    sv++;
+    return *this;
+}
+
+dreptunghi dreptunghi::operator--() //PREFIX
+{
+    cout << "++d\n" << endl;
+    so--;
+    sv--;
+    return *this;
+}
+
+dreptunghi dreptunghi::operator--(int a)  //SUFIX
+{
+    cout << "++d\n" << endl;
+    so--;
+    sv--;
+    return *this;
+}
+
 int dreptunghi::operator==(dreptunghi & d1)
 {
     return ((getP() == d1.getP()) && (getSo() == d1.getSo()) && (getSv() == d1.getSv()));
@@ -69,12 +111,12 @@ int dreptunghi::operator==(dreptunghi & d1)
 int dreptunghi::operator<(dreptunghi & d1)
 {
 
- //   cout << "\n operator < , dreptunghi:\n" << endl;
+//    cout << "\n operator < , dreptunghi:\n" << endl;
     return ( (getArea() < d1.getArea()) ? 1 : 0 );
 }
 
 int dreptunghi::operator>(dreptunghi & d1)
 {
- //   cout << "\n operator > , dreptunghi:\n" << endl;
+//    cout << "\n operator > , dreptunghi:\n" << endl;
     return ( (getArea() > d1.getArea()) ? 1 : 0 );
 }

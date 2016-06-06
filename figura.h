@@ -5,7 +5,7 @@ using namespace std;
 class figura
 {
     private:
-        static int counterID;
+        static int counterID;  // TINE CONT DE NUMARUL DE FIGURI CREATE - FOLOSIT PENTRU A ASIGNA ID-ul FIECAREI FIGURI
 
     protected:
         const unsigned int ID;  // ! CONSTANTA - initializata prin constructor
@@ -16,7 +16,6 @@ class figura
         virtual int     getID()=0;
         virtual double  getArea(){return 0.0;};
 
- //       virtual figura  operator+(double[]);
         virtual int     operator==(figura &){return 0;}
         virtual int     operator<(figura &){return 0;}
         virtual int     operator>(figura &){return 0;}

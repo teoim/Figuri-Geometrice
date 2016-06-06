@@ -11,11 +11,16 @@ class segmVe : public figura
 
     public:
         segmVe();
+        segmVe(const segmVe& sv);
         segmVe(double, double, double);
         ~segmVe();
 
         double  getLength();
         int     getID(){return ID;}
+        segmVe  operator++();
+        segmVe  operator++(int);
+        segmVe  operator--();
+        segmVe  operator--(int);
         int     operator==(segmVe &);
         int     operator<(segmVe &);
         int     operator>(segmVe &);
